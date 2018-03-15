@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ClassTime</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome">Welcome to Class Time!</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_testing_home">TestingHome</string>
+    <string name="title_activity_slave_sign_up">SlaveSignUp</string>
+    <string name="title_activity_process">Process</string>
+    <string name="title_activity_slave_sign_in">SlaveSignIn</string>
+    <string name="title_activity_prof_login">ProfLogin</string>
+    <string name="title_activity_master_main">MasterMain</string>
+</resources>

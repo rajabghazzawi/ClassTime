@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rajab.classtime" >
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+ To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name=".TestingHome"
+            android:label="@string/title_activity_testing_home" >
+        </activity>
+        <activity
+            android:name=".MasterLoginActivity"
+            android:label="@string/title_activity_master_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Process"
+            android:label="@string/title_activity_process" >
+        </activity>
+        <activity
+            android:name=".SlaveSignUp"
+            android:label="@string/title_activity_slave_sign_up" >
+        </activity>
+        <activity
+            android:name=".SlaveSignIn"
+            android:label="@string/title_activity_slave_sign_in" >
+        </activity>
+        <activity
+            android:name=".ProfLogin"
+            android:label="@string/title_activity_prof_login" >
+        </activity>
+        <activity
+            android:name=".MasterMain"
+            android:label="@string/title_activity_master_main" >
+        </activity>
+    </application>
+
+</manifest>
